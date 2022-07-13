@@ -5,7 +5,7 @@ description = ""
 authors = ["ziwan"]
 
 [tool.poetry.dependencies]
-python = "3.10"
+python = "3.10.5"
 Django = "^4.0.6"
 Pillow = "^9.2.0"
 mysqlclient = "^2.1.1"

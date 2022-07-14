@@ -49,7 +49,7 @@ class PostSearch(PostIndex):
         return qs
 
 
-class PostCategories(PostIndex):
+class PostCategory(PostIndex):
     template_name = 'posts/post_category.html'
 
     def get_queryset(self):
@@ -60,7 +60,7 @@ class PostCategories(PostIndex):
         if not category:
             return qs
 
-        qs = qs.filter(catergory_post__name_cat__iexact=category)
+        qs = qs.filter(category_post__name_cat__iexact=category)
 
         return qs
 

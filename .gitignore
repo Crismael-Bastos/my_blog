@@ -125,4 +125,6 @@ dmypy.json
 
 #media files
 media/
+
 *.txt
+.caralho

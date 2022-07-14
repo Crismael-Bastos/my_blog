@@ -13,6 +13,7 @@ django-summernote = "0.8.20"
 gunicorn = "^20.1.0"
 django-on-heroku = "1.1.2"
 prettyconf = "2.2.1"
+psycopg2 = "^2.9.3"
 
 [tool.poetry.dev-dependencies]
 

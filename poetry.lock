@@ -125,6 +125,14 @@ python-versions = "*"
 aws = ["boto3"]
 
 [[package]]
+name = "psycopg2"
+version = "2.9.3"
+description = "psycopg2 - Python-PostgreSQL Database Adapter"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "psycopg2-binary"
 version = "2.9.3"
 description = "psycopg2 - Python-PostgreSQL Database Adapter"
@@ -178,7 +186,7 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "1.1"
 python-versions = "3.10.5"
-content-hash = "09c1999918e233092b99d09373201f820a022bc7f66d76a858f5d98c06ec9063"
+content-hash = "96428561cc6d7a264d39c84ab150f0ec0a324ef5d31865cd57848c8862a649cc"
 
 [metadata.files]
 asgiref = [
@@ -269,6 +277,7 @@ pillow = [
     {file = "Pillow-9.2.0.tar.gz", hash = "sha256:75e636fd3e0fb872693f23ccb8a5ff2cd578801251f3a4f6854c6a5d437d3c04"},
 ]
 prettyconf = []
+psycopg2 = []
 psycopg2-binary = []
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},

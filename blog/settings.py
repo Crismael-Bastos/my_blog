@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'blog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': config('DB_NAME', default='my_blog'),
         'HOST': config('DB_URL', default='127.0.0.1'),
-        'PORT': '3306',
+        'PORT': '5432',
         'USER': config('DB_USERNAME', default='root'),
         'PASSWORD': config('DB_PASSWORD', default=''),
     }
@@ -115,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -152,3 +152,8 @@ INSTALLED_APPS += ('django_summernote',)
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 django_on_heroku.settings(locals())
+
+try:
+    from .local_settings import *
+except:
+    pass

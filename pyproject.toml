@@ -2,7 +2,7 @@
 name = "my_blog"
 version = "0.1.0"
 description = ""
-authors = ["ziwan"]
+authors = ["Crismael Bastos <crismaelbastos@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "3.10.5"
@@ -14,9 +14,9 @@ gunicorn = "^20.1.0"
 django-on-heroku = "1.1.2"
 prettyconf = "2.2.1"
 psycopg2 = "^2.9.3"
-ipdb = "^0.13.9"
 imagekitio = "^2.2.8"
 numpy = "^1.23.2"
+pre-commit = "^2.20.0"
 
 [tool.poetry.dev-dependencies]
 

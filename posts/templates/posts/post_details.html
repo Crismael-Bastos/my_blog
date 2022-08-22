@@ -22,8 +22,8 @@
                     <div class="col-xl"></div>
                     <div class="col-xl-8">
 
-                        {% if post.image_post %}
-                        <img class="img-fluid pb-5 " src="{{ post.image_post.url }}" alt="{{ post.title_post }}">
+                        {% if post.image_text %}
+                        <img class="img-fluid pb-5 " src="{{ post.image_text }}" alt="{{ post.title_post }}">
                         {% endif %}
 
                         {{ post.content_post|safe }}
@@ -57,7 +57,7 @@
 
                         <form method="POST" action="#send_comment">
                             {% csrf_token %}
- 
+
                             <table class="table">
                                {{ form }}
                                     <td colspan="2">
